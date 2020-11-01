@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobby from Geminus - About</title>
+    <meta name="description" content="Mert úgy látom, kiváncsivá tettelek.">
+    <meta name="keywords" content="bobby, geminus, gallery, galéria, képek">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    
+    <header id="header">
+        <h1 style="text-align: left;">Bobby from Geminus</h1>        
+    </header>
+
+    <nav>
+        <a class="menu_item" title="Home" href="index.html">Home</a>
+        <a class="menu_item" title="Works" href="works.html">Works</a>
+        <a class="menu_item" title="Gallery" href="gallery.html">Gallery</a>
+        <a class="menu_selected" title="About" href="about.html">About</a>
+    </nav>
+
+    <main>
+        <h2>About</h2>
+        <h3> > talán kiváncsivá tettelek?</h3>
+        <br>
+        <img src="assets/image/bobby.jpg" class="avatar2">
+        <h4>Balog Róbert vagyok, de szólíts csak Bobbynak!</h4><br>
+        Mezőberényben, egy Békés-megyei kisvárosban élek. Mechatronikai technikusként végeztem 1997-ben Békéscsabán, majd 1999-ben ugyanebben a városban, egy műszaki üzletben helyezkedtem el kezdetben mint bolti eladó, később boltvezető.<br>
+        Ezen időszak alatt saját erőmből képeztem magam grafikai szoftverek, valamint html és css ismeretekben, hiszen ezek a területek mindig is érdekeltek.<br><br>
+        <h5>Az alábbi grafikai és videós szoftvereket használom készség szinten:</h5>
+        <ol>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Indesign</li>
+            <li>Adobe Illustrator</li>
+            <li>Corel Draw</li>
+            <li>Inkscape</li>
+            <li>Adobe Premiere Pro</li>
+            <li>KdenLive</li>
+        </ol>
+        <br><br><br>
+        2008-ban munkahelyet váltottam. Grafikusként helyezkedtem el egy webstúdiónál, ahol folytattam önképzésemet és elmélyedtem a javascript, a php és a mysql rejtelmeiben.<br><br>
+        2009-ben összeolvadtunk egy nagy szoftverfejlesztő céggel, ahol a grafikusi feladatok mellett már fullstack feladatokat is elláttam.<br><br>
+        Úgy vélem, önképzésem során szerencsésen választottam meg a tanult készségek sorrendjét, hisz így tudtam fokozatosan fejlődni.
+        <br>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Actionscript / Javascript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+
+        <br><br>
+        Jelenlegi munkahelyemre 2014-ben érkeztem, elsősorban grafikusként, de itt is tudtam kamatoztatni a megszerzett tudásomat. Saját ügyviteli rendszert készítettem a nyomda számára, amelyet azóta elégedetten használnak a kollégák és amelyet természetesen folyamatosan fejlesztek.
+        <br><br>
+        <b>A munka mellett meglehetősen aktív életet élek.</b><br>
+        2014-óta aktívan futok. Többszörös maratonistának mondhatom magam.<br>
+        Gyerekkorom óta pedig folyamatosan elkísért a néptánc. 2016-óta az Ős Berény Táncegyüttesben alapítójaként pallérozódom.<br>
+        2019 karácsonya óta pedig saját, elsősorban informatikával foglalkozó YouTube csatornámat is terelgetem az ismertté válás felé.
+        <br><br>
+        <h5>Hobbijaim:</h5>
+        <ul>
+            <li>minden, ami informatika</li>
+            <li>futás</li>
+            <li>néptánc</li>
+            <li>minden, ami sci-fi</li>
+            <li>írás</li>
+        </ul>
+        <br><br>
+        Habár több éve dolgozom front- és backend területen, a készségeimet önképzéssel szereztem, így mindenképp fontosnak tartom, hogy szakemberektől kapjak átfogó képet ezen területekről, megismerjem az aktuális trendet, hogy képezhessen magam tovább, immáron segítséggel.
+    </main>
+
+    <section id="about_form">
+        <form action="">
+            <h2 class="form_header">Amennyiben kérdés fogalmazódott meg benned irányomban, kérlek írj üzenetet!</h2>
+            <label for="name">név</label>
+            <input name="name" type="text" minlength="5" required>
+            <br><br>
+            <label for="email">e-mail cím</label>
+            <input name="email" type="email" required>
+            <br><br>
+            <label for="message">üzenet</label>
+            <textarea name="message" id="message" cols="30" rows="10" minlength="20" required></textarea>
+            <input type="submit" value="Üzenet küldése" class="submit">
+        </form>
+        
+    </section>
+
+    <footer>
+        <a href="#header">Back to the TOP</a>
+    </footer>
+
+    <script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+        });
+    </script>
+
+</body>
+</html>

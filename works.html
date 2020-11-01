@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobby from Geminus - Works</title>
+    <meta name="description" content="Munkáimból három projektet emelnék most ki. Nem feltétlenül a legnagyobb volumenűeket és összetettebbeket.">
+    <meta name="keywords" content="bobby, geminus, works, munkáim">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    
+    <header id="header">
+        <h1 style="text-align: left;">Bobby from Geminus</h1>        
+    </header>
+
+    <nav>
+        <a class="menu_item" title="Home" href="index.html">Home</a>
+        <a class="menu_selected" title="Works" href="works.html">Works</a>
+        <a class="menu_item" title="Gallery" href="gallery.html">Gallery</a>
+        <a class="menu_item" title="About" href="about.html">About</a>
+    </nav>
+
+    <main>
+        <h2>Works</h2>
+        <h3> > valamiből élni kell</h3>
+        <br>
+        Munkáimból három projektet emelnék most ki. Nem feltétlenül a legnagyobb volumenűeket és összetettebbeket.<br>
+        Ugyanakkor e három projekt esetében a frontend fejlesztést magam végeztem. A listában azonban szerepelnek olyan projektek is, amelyek backend fejlesztést is igényeltek, amelyek megvalósítása is hozzám köthető.
+        <br><br>
+        <section class="work_container">
+            <img src="assets/image/work_02.jpg" alt="Nyugati Zöld Fogászati CT" class="work_image">
+            <div>
+                <h4>Nyugati Zöld Fogászati CT weboldal</h4>
+                <br>
+                A Nyugati Zöld Fogászati CT modern környezetben fogadja pácienseit és a legújabb CT berendezéssel készítenek felvételeket, amelyet a beteg és orvosa bármikor - akár a beteg kezelése közben is – megtekintheti.
+                <br><br>
+                A vállalkozás számára egy statikus, reszponzív weboldalt készítettem, amelynek arculati tervét is magam készítettem.
+                <br><br>
+                Az oldal megtekintéséhez kattints a linkre!
+                <a href="http://fogaszatizoldct.hu" target="_blank">fogaszatizoldct.hu</a> 
+            </div>
+        </section>
+
+        <section class="work_container">
+            <img src="assets/image/work_01.jpg" alt="Színfolt Bútor Áruház" class="work_image">
+            <div>
+                <h4>Színfolt Bútor Áruház online bútorkatalógus</h4>
+                <br>
+                A Színfolt Kft bőséges bútorkínálatával nem csak Békéscsabán, hanem a környező településeken élőket is ki tudja szolgálni.<br>
+                Áruházuk Békéscsaba egyik jelentős ipari műemlék épületében várja az érdeklődőket. Kínálatuk jelentős részét magyar gyártók termékei alkotják, de lengyel, francia, német, sőt még távol-keleti importból is értékesítenek bútorokat.
+                <br><br>
+                A vállalkozás számra egy dimanikus (php - mysql) weboldalt és online bútorkatalógust készítettem, amelynek arculatát is magam alakítottam ki.<br>
+                A weboldal adatainak menedzseléséhez saját, egyedi tartalomkezelő rendszert is fejlesztettem.
+                <br><br>
+                Az oldal megtekintéséhez kattints a linkre!
+                <a href="http://szinfoltbutor.hu" target="_blank">szinfoltbutor.hu</a> 
+            </div>
+        </section>
+
+        <section class="work_container">
+            <img src="assets/image/work_03.jpg" alt="Kopirex Digitális Nyomda" class="work_image">
+            <div>
+                <h4>Kopirex Digitális Nyomda</h4>
+                <br>
+                A Kopirex Digitális Nyomda immáron 20 esztendeje szolgálja ki a Békés megyei magánszemélyek és vállakozások nyomdai igényeit. Fő profiljuk a kis példányszámú nyomdai anyagok előállítása, úgy mint névjegykártyák, szórólapok, plakátok, brossurák. 
+                Emellett póló és ajándéktárgy emblémázással, könyvnyomtatással, dekorációval is foglalkoznak.
+                <br><br>
+                Jelenlegi munkaadóm számára a korábbi weboldalt váltottam le egy teljesen alapoktól felépített oldallal. A projektet teljes mértékben egy személyben, fullstack végeztem az arculattervtől a front- és backend fejlesztéseken át az adatfeltöltésig.
+                <br><br>
+                Az oldal megtekintéséhez kattints a linkre!
+                <a href="http://kopirex.hu" target="_blank">kopirex.hu</a> 
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#header">Back to the TOP</a>
+    </footer>
+
+    <script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+        });
+    </script>
+
+</body>
+</html>

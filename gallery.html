@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobby from Geminus - Gallery</title>
+    <meta name="description" content="Mert van képem hozzá.">
+    <meta name="keywords" content="bobby, geminus, gallery, galéria, képek">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    
+    <header id="header">
+        <h1 style="text-align: left;">Bobby from Geminus</h1>        
+    </header>
+
+    <nav>
+        <a class="menu_item" title="Home" href="index.html">Home</a>
+        <a class="menu_item" title="Works" href="works.html">Works</a>
+        <a class="menu_selected" title="Gallery" href="gallery.html">Gallery</a>
+        <a class="menu_item" title="About" href="about.html">About</a>
+    </nav>
+
+    <main>
+        <h2>Gallery</h2>
+        <h3> > van képem hozzá</h3>
+        <br>
+        
+        <section class="gallery_container">
+            <img src="assets/image/gallery_01_01.jpg" alt="Futás #01">
+            <img src="assets/image/gallery_01_02.jpg" alt="Futás #02">
+            <img src="assets/image/gallery_01_03.jpg" alt="Futás #03">
+            <img src="assets/image/gallery_01_04.jpg" alt="Futás #04">
+            <img src="assets/image/gallery_01_05.jpg" alt="Futás #05">
+            <img src="assets/image/gallery_01_06.jpg" alt="Futás #06">
+        </section>
+
+        <section class="gallery_container">
+            <img src="assets/image/gallery_02_01.jpg" alt="Néptánc #01">
+            <img src="assets/image/gallery_02_02.jpg" alt="Néptánc #02">
+            <img src="assets/image/gallery_02_03.jpg" alt="Néptánc #03">
+            <img src="assets/image/gallery_02_04.jpg" alt="Néptánc #04">
+            <img src="assets/image/gallery_02_05.jpg" alt="Néptánc #05">
+            <img src="assets/image/gallery_02_06.jpg" alt="Néptánc #06">
+        </section>
+
+        <section class="gallery_container">
+            <img src="assets/image/gallery_03_01.jpg" alt="Hardver / YouTube #01">
+            <img src="assets/image/gallery_03_02.jpg" alt="Hardver / YouTube #02">
+            <img src="assets/image/gallery_03_03.jpg" alt="Hardver / YouTube #03">
+            <img src="assets/image/gallery_03_04.jpg" alt="Hardver / YouTube #04">
+            <img src="assets/image/gallery_03_05.jpg" alt="Hardver / YouTube #05">
+            <img src="assets/image/gallery_03_06.jpg" alt="Hardver / YouTube #06">
+        </section>
+
+        <section class="gallery_container">
+            <img src="assets/image/gallery_04_01.jpg" alt="Sci-fi és írás #01">
+            <img src="assets/image/gallery_04_02.jpg" alt="Sci-fi és írás #02">
+            <img src="assets/image/gallery_04_03.jpg" alt="Sci-fi és írás #03">
+        </section>
+    </main>
+
+    <footer>
+        <a href="#header">Back to the TOP</a>
+    </footer>
+
+    <script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+        });
+    </script>
+
+</body>
+</html>
